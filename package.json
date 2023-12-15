@@ -1,0 +1,52 @@
+{
+    "name": "nebulas-dynamic",
+    "version": "0.7.3",
+    "description": "A new generation of interception proxy.",
+    "main": "lib/index.cjs",
+    "license": "GNU",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/NebulaServices/Dynamic/"
+    },
+    "files": [
+        "dist",
+        "lib",
+        "client.d.ts"
+    ],
+    "type": "module",
+    "scripts": {
+      "build:dev": "node esbuild.dev.js",
+      "build:prod": "node esbuild.prod.js",
+      "build": "node esbuild.prod.js"
+    },
+    "dependencies": {
+      "@dynamic-pkg/mime": "^1.0.1",
+      "@dynamic-pkg/mutation": "^1.0.0",
+      "@fastify/compress": "^6.4.0",
+      "@fastify/static": "^6.10.2",
+      "@tomphttp/bare-client": "^2.2.0-alpha",
+      "acorn": "^8.10.0",
+      "astring": "^1.8.6",
+      "chalk": "^5.3.0",
+      "cookie": "^0.5.0",
+      "domhandler": "^5.0.3",
+      "esbuild": "^0.19.0",
+      "fastify": "^4.21.0",
+      "git-commit-info": "^2.0.2",
+      "idb": "^7.0.2",
+      "open": "^9.1.0",
+      "parse5": "^7.1.2",
+      "path-browserify": "^1.0.1",
+      "set-cookie-parser": "^2.6.0"
+    },
+    "devDependencies": {
+      "@types/cookie": "^0.5.1",
+      "@types/crypto-js": "^4.1.1",
+      "@types/mime-db": "^1.43.1",
+      "@types/path-browserify": "^1.0.0",
+      "@types/set-cookie-parser": "^2.4.2",
+      "execa": "^8.0.1",
+      "ts-node": "^10.8.1",
+      "typescript": "^5.1.6"
+    }
+}

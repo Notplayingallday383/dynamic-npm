@@ -1,5 +1,5 @@
 {
-    "name": "nebulas-dynamic",
+    "name": "dynamic",
     "version": "0.7.3",
     "description": "A new generation of interception proxy.",
     "main": "lib/index.cjs",
